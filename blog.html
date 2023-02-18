@@ -23,7 +23,7 @@
       </div>
 
       <div class="navbar-end lg:w-[50%]">
-        <a class=" normal-case btn border-transparent bg-sky-500 px-8 mx-2">Home</a>
+        <a id="redirect-1" class=" normal-case btn border-transparent bg-sky-500 px-8 mx-2">Home</a>
       </div>
     </div>
   </header>
@@ -161,7 +161,11 @@
 
     </section>
   </main>
-
+   <script>
+    document.querySelector('#redirect-1').addEventListener('click',()=>{
+            window.location.href="index.html";
+        });
+   </script>
 </body>
 
 </html>

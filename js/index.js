@@ -109,7 +109,7 @@ document.getElementById('fourth-card').addEventListener('click',function(){  ser
       return serial=0;
     }
     else{
-      displayData(cardTitle,rhombusArea.toFixed(2));
+      displayData(cardTitle,rhombusArea);
     }
   
   
@@ -140,7 +140,7 @@ document.getElementById('fifth-card').addEventListener('click',function(){  seri
       return serial=0;
     }
     else{
-      displayData(cardTitle,pentagonArea.toFixed(2));
+      displayData(cardTitle,pentagonArea);
     }
 });
 
