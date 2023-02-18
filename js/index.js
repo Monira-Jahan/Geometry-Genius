@@ -10,7 +10,7 @@ document.getElementById('first-card').addEventListener('click',function(){  seri
 
     const triangleArea=0.5*parseFloat(firstInput)*parseFloat(secondInput);
     const buttonConvert=document.getElementById('btn-convert');
-    //console.log(buttonConvert);
+    
     
     //validation
     if (
@@ -57,62 +57,25 @@ document.getElementById('second-card').addEventListener('click',function(){  ser
 
 //Third Card
 document.getElementById('third-card').addEventListener('click',function(){  serial += 1;
-  const cardTitle=document.getElementById('third-title').innerText;
-  const firstInput=document.getElementById('para-base').value;
-  const secondInput=document.getElementById('para-height').value;
-
-
-  const parallelogramArea=parseFloat(firstInput)*parseFloat(secondInput);
+  
+  //   getting data using common function using getElementById method
+  const card=getData('third-title','para-base','para-height');
+  const parallelogramArea=parseFloat(card.firstInput)*parseFloat(card.secondInput);
   const buttonConvert=document.getElementById('btn-convert');
   //  console.log(buttonConvert);
-  
-  //validation
-  if (
-      firstInput < 0 ||
-      firstInput == "" ||
-      firstInput==="string"||
-      secondInput < 0 ||
-      secondInput == "" ||
-      secondInput==="string"
-      ) {
-      alert("Please Enter Valid Inputs");
-      return serial=0;
-    }
-    else{
-      displayData(cardTitle,parallelogramArea);
-    }
-  
-  
+  displayData(card.cardTitle,parallelogramArea);
 });
 
 //Fourth Card
 document.getElementById('fourth-card').addEventListener('click',function(){  serial += 1;
-  const cardTitle=document.getElementById('fourth-title').innerText;
-  const firstInput=document.getElementById('first-d1').value;
-  const secondInput=document.getElementById('second-d2').value;
-
-
-  const rhombusArea=0.5*parseFloat(firstInput)*parseFloat(secondInput);
+  
+  //  getting data using common function using getElementById method
+  const card=getData('fourth-title','first-d1','second-d2');
+  const rhombusArea=0.5*parseFloat(card.firstInput)*parseFloat(card.secondInput);
   const buttonConvert=document.getElementById('btn-convert');
    console.log(buttonConvert);
-  
+  displayData(card.cardTitle,rhombusArea);
   //validation
-  if (
-      firstInput < 0 ||
-      firstInput == "" ||
-      firstInput==="string"||
-      secondInput < 0 ||
-      secondInput == "" ||
-      secondInput==="string"
-      ) {
-      alert("Please Enter Valid Inputs");
-      return serial=0;
-    }
-    else{
-      displayData(cardTitle,rhombusArea);
-    }
-  
-  
 });
 
 //Fifth card
@@ -149,7 +112,7 @@ document.getElementById('sixth-card').addEventListener('click',function(){  seri
   const cardTitle=document.getElementById('sixth-title').innerText;
   const firstInput=document.getElementById('first-a-axis').value;
   const secondInput=document.getElementById('second-b-axis').value;
-//  console.log(cardTitle,typeof firstInput,typeof secondInput);
+
   let pi=3.14;
   const ellipseArea=pi*parseFloat(firstInput)*parseFloat(secondInput);
  
@@ -173,8 +136,6 @@ document.getElementById('sixth-card').addEventListener('click',function(){  seri
     }
 });
 
-
-// Common Function
 //common function to display  data
 function displayData(nameOfGeo,resultOfArea){
     const container=document.getElementById('table-container');
@@ -189,3 +150,17 @@ function displayData(nameOfGeo,resultOfArea){
    container.appendChild(tr);
 };
 
+/// common function to get data using getElementById method
+function getData(id1, id2, id3) {
+  // get the data from htm using id
+  const cardTitle = document.getElementById(id1).innerText;
+  const firstInput = document.getElementById(id2).value;
+  const secondInput = document.getElementById(id3).value;
+
+   const card = {
+  cardTitle: cardTitle,
+  firstInput: firstInput,
+  secondInput: secondInput,
+  };
+  return card;
+}
