@@ -1,39 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <script>
-        function pageRedirect() {
-            window.location.replace('index.html');
-        }      
-        setTimeout("pageRedirect()", 10000);
-    </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    function pageRedirect1() {
+      window.location.replace('index.html');
+    }
+    setTimeout("pageRedirect()", 10000);
+  </script>
 </head>
+
 <body>
-    <header>
-        <div class="navbar flex bg-sky-100 shadow-xl lg:px-8 w-full rounded-lg">
-            <div class="navbar-start block px-4 ">
+  <header>
+    <div class="navbar flex bg-sky-100 shadow-xl lg:px-8 w-full rounded-lg">
+      <div class="navbar-start block px-4 ">
 
-                <a class="normal-case text-xl font-bold">Interactive</a>
+        <a class="normal-case text-xl font-bold">Interactive</a>
 
-                <p class="text-sm ">Geometry Genius</p>
+        <p class="text-sm ">Geometry Genius</p>
+      </div>
+
+      <div class="navbar-end lg:w-[50%]">
+        <a class=" normal-case btn border-transparent bg-sky-500 px-8 mx-2" onclick="pageRedirect1()">Home</a>
+      </div>
+    </div>
+  </header>
+  <!-- Main section -->
+  <main>
+    <section>
+      <div class="bg-gradient-to-r from-purple-500 to-pink-500 w-full h-32 lg:h-48 shadow-xl mt-2 ">
+        <h1 class="text-2xl md:text-4xl lg:text-4xl  text-center text-white mx-auto py-8 font-bold hover:text-gray-900">
+          Interactive Blog</h1>
+      </div>
+    </section>
+    <section>
+      <div
+        class="blog-details w-full md:w-[80%] lg:w-[80%] mt-5 grid md:grid-cols-2 lg:grid-cols-2 gap-6 mx-12 lg:mx-auto">
+        <!-- First Question -->
+        <div class="card w-full bg-base-100 shadow-xl m-auto">
+          <figure><img class="w-full" src="./images/dom.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">What Is DOM and What is the purpose of the DOM?</h2>
+            <p>DOM stands For Documnet Object Model.DOM is a programming Interface for document like HTML.
+              </p>
+            
+       <!-- The button to get the Answer -->
+            <label for="my-modal" class="btn w-4/12 px-auto">Get Answer</label>
+         <!-- Modal Section -->
+           <input type="checkbox" id="my-modal" class="modal-toggle" />
+            <div class="modal">
+              <div class="modal-box">
+                <h3 class="font-bold text-lg">Answer:</h3>
+                <p class="py-4">DOM stands For Document Object Model.DOM is a programming Interface for a document like HTML. The object model represents the structure of the document as an object.<br>
+                <strong>Purpose Of the DOM:</strong>
+                DOM can maintain a standard programming interface for hTML and Xml documents. Programmers can maintain a standard to create and change any document in a development environment. It creates an HTML document like a tree and also makes an object.
+                </p>
+                <div class="modal-action">
+                  <label for="my-modal" class="btn">Ok</label>
+                </div>
+              </div>
             </div>
-
-            <div class="navbar-end lg:w-[50%]">
-                <a class=" normal-case btn border-transparent bg-sky-500 px-8 mx-2" onclick="pageRedirect()">Home</a>
-            </div>
+          </div>
         </div>
-    </header>
-<!-- Main section -->
-    <main>
-    
-    </main>
+        <!-- Second question -->
+        <div class="card w-full bg-base-100 shadow-xl m-auto">
+          <figure><img class="w-full" src="./images/dom.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">How Will you select HTML elements using DOM? Name the DOM Methods. </h2>
+            <p>There are 5 ways in which we can select HTML elements using DOM selectors Which are:
+              </p>
+            
+       <!-- The button to get the Answer -->
+            <label for="my-modal" class="btn w-4/12 px-auto">Get Answer</label>
+         <!-- Modal Section -->
+           <input type="checkbox" id="my-modal" class="modal-toggle" />
+            <div class="modal">
+              <div class="modal-box">
+                <h3 class="font-bold text-lg">Answer:</h3>
+                <p class="py-4">There are 5 ways in which we can select HTML elements using DOM selectors Which are:<br>
+                  <ul>
+                    <li>getElementsByTagName()</li>
+                    <li>getElementsByClassName()</li>
+                    <li>getElementById</li>
+                    <li>querySelector()</li>
+                    <li>querySelectorAll()/li>
+                  </ul>
+                <strong>Purpose Of the DOM:</strong>
+                DOM can maintain a standard programming interface for hTML and Xml documents. Programmers can maintain a standard to create and change any document in a development environment. It creates an HTML document like a tree and also makes an object.
+                </p>
+                <div class="modal-action">
+                  <label for="my-modal" class="btn">Ok</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Third Question -->
+        <div class="card w-full bg-base-100 shadow-xl m-auto">
+          <figure><img src="/images/dom.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Fourth Question -->
+        <div class="card w-full bg-base-100 shadow-xl m-auto">
+          <figure><img src="/images/dom.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+  </main>
 
 </body>
+
 </html>
