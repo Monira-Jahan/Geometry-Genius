@@ -118,6 +118,35 @@ document.getElementById('fourth-card').addEventListener('click',function(){  ser
   
 });
 
+//Fifth card
+
+document.getElementById('fifth-card').addEventListener('click',function(){  serial += 1;
+  const cardTitle=document.getElementById('fifth-title').innerText;
+  const firstInput=document.getElementById('first-perimeter').value;
+  const secondInput=document.getElementById('second-apothom').value;
+//  console.log(cardTitle,typeof firstInput,typeof secondInput);
+
+  const pentagonArea=0.5*parseFloat(firstInput)*parseFloat(secondInput);
+  const buttonConvert=document.getElementById('btn-convert');
+   console.log(buttonConvert);
+  
+  //validation
+  if (
+      firstInput < 0 ||
+      firstInput == "" ||
+      firstInput==="string"||
+      secondInput < 0 ||
+      secondInput == "" ||
+      secondInput==="string"
+      ) {
+      alert("Please Enter Valid Inputs");
+      return serial=0;
+    }
+    else{
+      displayData(cardTitle,pentagonArea);
+    }
+});
+
 // Common Function
 //common function to display  data
 function displayData(nameOfGeo,resultOfArea){
@@ -131,5 +160,5 @@ function displayData(nameOfGeo,resultOfArea){
    <td><button id="btn-convert"class="btn btn-primary normal-case text-sm font-semibold">Convert By <span>m<sup>2</sup></span></button></td>
    `;
    container.appendChild(tr);
-}
+};
 
