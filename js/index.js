@@ -52,7 +52,7 @@ document.getElementById('second-card').addEventListener('click',function(){  ser
         return serial=0;
       }
       else{
-        displayData(cardTitle,rectangleArea.toFixed(2));
+        displayData(cardTitle,rectangleArea);
       }
     
     
@@ -67,7 +67,7 @@ document.getElementById('third-card').addEventListener('click',function(){  seri
 
   const parallelogramArea=parseFloat(firstInput)*parseFloat(secondInput);
   const buttonConvert=document.getElementById('btn-convert');
-   console.log(buttonConvert);
+  //  console.log(buttonConvert);
   
   //validation
   if (
