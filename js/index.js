@@ -88,6 +88,35 @@ document.getElementById('third-card').addEventListener('click',function(){  seri
   
 });
 
+//Fourth Card
+document.getElementById('fourth-card').addEventListener('click',function(){  serial += 1;
+  const cardTitle=document.getElementById('fourth-title').innerText;
+  const firstInput=document.getElementById('first-d1').value;
+  const secondInput=document.getElementById('second-d2').value;
+//  console.log(cardTitle,typeof firstInput,typeof secondInput);
+
+  const rhombusArea=0.5*parseFloat(firstInput)*parseFloat(secondInput);
+  const buttonConvert=document.getElementById('btn-convert');
+   console.log(buttonConvert);
+  
+  //validation
+  if (
+      firstInput < 0 ||
+      firstInput == "" ||
+      firstInput==="string"||
+      secondInput < 0 ||
+      secondInput == "" ||
+      secondInput==="string"
+      ) {
+      alert("Please Enter Valid Inputs");
+      return serial=0;
+    }
+    else{
+      displayData(cardTitle,rhombusArea);
+    }
+  
+  
+});
 
 // Common Function
 //common function to display  data
