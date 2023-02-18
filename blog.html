@@ -40,11 +40,11 @@
           Interactive Blog</h1>
       </div>
     </section>
+    <!-- Blog Section -->
     <section>
-      <div
-        class="blog-details w-full md:w-[80%] lg:w-[80%] mt-5 grid md:grid-cols-2 lg:grid-cols-2 gap-6 mx-12 lg:mx-auto">
+      <div class="Blog-details w-full md:w-[50%] lg:w-[70%] mt-5 grid md:grid-cols-1 lg:grid-cols-2 gap-6 mx-auto">
         <!-- First Question -->
-        <div class="card w-full bg-base-100 shadow-xl m-auto">
+        <div class="card w-full bg-base-100 shadow-xl  lg:mx-12">
           <figure><img class="w-full" src="./images/dom.png" alt="Shoes" /></figure>
           <div class="card-body">
             <h2 class="card-title">What Is DOM and What is the purpose of the DOM?</h2>
@@ -69,63 +69,68 @@
             </div>
           </div>
         </div>
-        <!-- Second question -->
-        <div class="card w-full bg-base-100 shadow-xl m-auto">
+        <!-- Second Question -->
+        
+          <div class="card w-full bg-base-100 shadow-xl lg:mx-12">
+            <figure><img class="w-full" src="./images/dom.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">How Will you select HTML elements using DOM? Name the DOM Methods.</h2>
+              <p>There are 5 ways in which we can select HTML elements using DOM selectors Which are:
+                </p>
+              
+         <!-- The button to get the Answer -->
+              <label for="my-modal-1" class="btn w-4/12 px-auto">Get Answer</label>
+           <!-- Modal Section -->
+             <input type="checkbox" id="my-modal-1" class="modal-toggle" />
+              <div class="modal">
+                <div class="modal-box">
+                  <h3 class="font-bold text-lg">Answer:</h3>
+                  <p class="py-4">There are 5 ways in which we can select HTML elements using DOM selectors Which are:<br>
+                   1. getElementsByTagName()<br>
+                   2. getElementsByClassName()<br>
+                   3. getElementById()<br>
+                   4. querySelector()<br>
+                   5. querySelectorAll()<br>
+                  </p>
+                  <div class="modal-action">
+                    <label for="my-modal-1" class="btn">Ok</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Third Question -->
+        <div class="card w-full bg-base-100 shadow-xl lg:mx-12">
           <figure><img class="w-full" src="./images/dom.png" alt="Shoes" /></figure>
           <div class="card-body">
-            <h2 class="card-title">How Will you select HTML elements using DOM? Name the DOM Methods. </h2>
+            <h2 class="card-title">How Will you select HTML elements using DOM? Name the DOM Methods.</h2>
             <p>There are 5 ways in which we can select HTML elements using DOM selectors Which are:
               </p>
             
        <!-- The button to get the Answer -->
-            <label for="my-modal" class="btn w-4/12 px-auto">Get Answer</label>
+            <label for="my-modal-2" class="btn w-4/12 px-auto">Get Answer</label>
          <!-- Modal Section -->
-           <input type="checkbox" id="my-modal" class="modal-toggle" />
+           <input type="checkbox" id="my-modal-2" class="modal-toggle" />
             <div class="modal">
               <div class="modal-box">
                 <h3 class="font-bold text-lg">Answer:</h3>
                 <p class="py-4">There are 5 ways in which we can select HTML elements using DOM selectors Which are:<br>
-                  <ul>
-                    <li>getElementsByTagName()</li>
-                    <li>getElementsByClassName()</li>
-                    <li>getElementById</li>
-                    <li>querySelector()</li>
-                    <li>querySelectorAll()/li>
-                  </ul>
-                <strong>Purpose Of the DOM:</strong>
-                DOM can maintain a standard programming interface for hTML and Xml documents. Programmers can maintain a standard to create and change any document in a development environment. It creates an HTML document like a tree and also makes an object.
+                 1. getElementsByTagName()<br>
+                 2. getElementsByClassName()<br>
+                 3. getElementById()<br>
+                 4. querySelector()<br>
+                 5. querySelectorAll()<br>
                 </p>
                 <div class="modal-action">
-                  <label for="my-modal" class="btn">Ok</label>
+                  <label for="my-modal-2" class="btn">Ok</label>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Third Question -->
-        <div class="card w-full bg-base-100 shadow-xl m-auto">
-          <figure><img src="/images/dom.png" alt="Shoes" /></figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
-            </div>
-          </div>
+  
         </div>
-        <!-- Fourth Question -->
-        <div class="card w-full bg-base-100 shadow-xl m-auto">
-          <figure><img src="/images/dom.png" alt="Shoes" /></figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
 
     </section>
   </main>
