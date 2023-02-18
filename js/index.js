@@ -59,7 +59,34 @@ document.getElementById('second-card').addEventListener('click',function(){  ser
 });
 
 //Third Card
+document.getElementById('third-card').addEventListener('click',function(){  serial += 1;
+  const cardTitle=document.getElementById('third-title').innerText;
+  const firstInput=document.getElementById('para-base').value;
+  const secondInput=document.getElementById('para-height').value;
+//  console.log(cardTitle,typeof firstInput,typeof secondInput);
 
+  const parallelogramArea=parseFloat(firstInput)*parseFloat(secondInput);
+  const buttonConvert=document.getElementById('btn-convert');
+   console.log(buttonConvert);
+  
+  //validation
+  if (
+      firstInput < 0 ||
+      firstInput == "" ||
+      firstInput==="string"||
+      secondInput < 0 ||
+      secondInput == "" ||
+      secondInput==="string"
+      ) {
+      alert("Please Enter Valid Inputs");
+      return serial=0;
+    }
+    else{
+      displayData(cardTitle,parallelogramArea);
+    }
+  
+  
+});
 
 
 // Common Function
