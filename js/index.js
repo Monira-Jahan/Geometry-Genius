@@ -6,13 +6,12 @@ document.getElementById('first-card').addEventListener('click',function(){  seri
     const cardTitle=document.getElementById('first-title').innerText;
     const firstInput=document.getElementById('first-base').value;
     const secondInput=document.getElementById('second-height').value;
-  //  console.log(cardTitle,typeof firstInput,typeof secondInput);
+  
 
     const triangleArea=0.5*parseFloat(firstInput)*parseFloat(secondInput);
     const buttonConvert=document.getElementById('btn-convert');
-    console.log(buttonConvert);
+    //console.log(buttonConvert);
     
-
     //validation
     if (
         firstInput < 0 ||
@@ -24,10 +23,8 @@ document.getElementById('first-card').addEventListener('click',function(){  seri
         return serial=0;
       }
       else{
-        displayData(cardTitle,triangleArea.toFixed(2));
+        displayData(cardTitle,triangleArea);
       }
-    
-    
 });
 
 //Second Card
@@ -35,7 +32,7 @@ document.getElementById('second-card').addEventListener('click',function(){  ser
     const cardTitle=document.getElementById('second-title').innerText;
     const firstInput=document.getElementById('first-width').value;
     const secondInput=document.getElementById('second-length').value;
-  //  console.log(cardTitle,typeof firstInput,typeof secondInput);
+  
 
     const rectangleArea=parseFloat(firstInput)*parseFloat(secondInput);
     const buttonConvert=document.getElementById('btn-convert');
@@ -63,7 +60,7 @@ document.getElementById('third-card').addEventListener('click',function(){  seri
   const cardTitle=document.getElementById('third-title').innerText;
   const firstInput=document.getElementById('para-base').value;
   const secondInput=document.getElementById('para-height').value;
-//  console.log(cardTitle,typeof firstInput,typeof secondInput);
+
 
   const parallelogramArea=parseFloat(firstInput)*parseFloat(secondInput);
   const buttonConvert=document.getElementById('btn-convert');
@@ -82,7 +79,7 @@ document.getElementById('third-card').addEventListener('click',function(){  seri
       return serial=0;
     }
     else{
-      displayData(cardTitle,parallelogramArea.toFixed(2));
+      displayData(cardTitle,parallelogramArea);
     }
   
   
@@ -93,7 +90,7 @@ document.getElementById('fourth-card').addEventListener('click',function(){  ser
   const cardTitle=document.getElementById('fourth-title').innerText;
   const firstInput=document.getElementById('first-d1').value;
   const secondInput=document.getElementById('second-d2').value;
-//  console.log(cardTitle,typeof firstInput,typeof secondInput);
+
 
   const rhombusArea=0.5*parseFloat(firstInput)*parseFloat(secondInput);
   const buttonConvert=document.getElementById('btn-convert');
@@ -124,7 +121,7 @@ document.getElementById('fifth-card').addEventListener('click',function(){  seri
   const cardTitle=document.getElementById('fifth-title').innerText;
   const firstInput=document.getElementById('first-perimeter').value;
   const secondInput=document.getElementById('second-apothom').value;
-//  console.log(cardTitle,typeof firstInput,typeof secondInput);
+
 
   const pentagonArea=0.5*parseFloat(firstInput)*parseFloat(secondInput);
   const buttonConvert=document.getElementById('btn-convert');
