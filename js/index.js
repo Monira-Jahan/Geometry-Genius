@@ -24,7 +24,7 @@ document.getElementById('first-card').addEventListener('click',function(){  seri
         return serial=0;
       }
       else{
-        displayData(cardTitle,triangleArea);
+        displayData(cardTitle,triangleArea.toFixed(2));
       }
     
     
@@ -52,7 +52,7 @@ document.getElementById('second-card').addEventListener('click',function(){  ser
         return serial=0;
       }
       else{
-        displayData(cardTitle,rectangleArea);
+        displayData(cardTitle,rectangleArea.toFixed(2));
       }
     
     
@@ -82,7 +82,7 @@ document.getElementById('third-card').addEventListener('click',function(){  seri
       return serial=0;
     }
     else{
-      displayData(cardTitle,parallelogramArea);
+      displayData(cardTitle,parallelogramArea.toFixed(2));
     }
   
   
@@ -112,7 +112,7 @@ document.getElementById('fourth-card').addEventListener('click',function(){  ser
       return serial=0;
     }
     else{
-      displayData(cardTitle,rhombusArea);
+      displayData(cardTitle,rhombusArea.toFixed(2));
     }
   
   
@@ -143,9 +143,39 @@ document.getElementById('fifth-card').addEventListener('click',function(){  seri
       return serial=0;
     }
     else{
-      displayData(cardTitle,pentagonArea);
+      displayData(cardTitle,pentagonArea.toFixed(2));
     }
 });
+
+//sixth Function
+document.getElementById('sixth-card').addEventListener('click',function(){  serial += 1;
+  const cardTitle=document.getElementById('sixth-title').innerText;
+  const firstInput=document.getElementById('first-a-axis').value;
+  const secondInput=document.getElementById('second-b-axis').value;
+//  console.log(cardTitle,typeof firstInput,typeof secondInput);
+  let pi=3.14;
+  const ellipseArea=pi*parseFloat(firstInput)*parseFloat(secondInput);
+ 
+  const buttonConvert=document.getElementById('btn-convert');
+   console.log(buttonConvert);
+  
+  //validation
+  if (
+      firstInput < 0 ||
+      firstInput == "" ||
+      firstInput==="string"||
+      secondInput < 0 ||
+      secondInput == "" ||
+      secondInput==="string"
+      ) {
+      alert("Please Enter Valid Inputs");
+      return serial=0;
+    }
+    else{
+      displayData(cardTitle,ellipseArea.toFixed(2));
+    }
+});
+
 
 // Common Function
 //common function to display  data
