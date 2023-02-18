@@ -43,16 +43,16 @@
 
                         <div class="flex lg:flex gap-2 mb-4 mx-4">
                             <input id="first-base" type="text" placeholder="b"
-                                class="input input-bordered input-sm w-full max-w-xs" />
+                                class="input input-bordered input-sm w-full max-w-xs" required />
                             <label>cm</label>
                             <input id="second-height" type="text" placeholder="h"
-                                class="input input-bordered input-sm w-full max-w-xs" />
+                                class="input input-bordered input-sm w-full max-w-xs" required />
                             <label>cm</label>
                         </div>
 
                         <div class="card-actions justify-end ">
-                            <button class="btn btn-wide bg-sky-500 border-transparent normal-case text-lg mx-auto mb-8 "
-                                id="first-card">
+                            <button class="btn btn-wide bg-sky-500 border-transparent normal-case text-lg mx-auto mb-8" 
+                            id="first-card">
                                 Calculate
                             </button>
                         </div>
@@ -64,21 +64,21 @@
                         <img class="w-9/12 m-6  h-40" src="./images/rectangle.png" alt=" " />
                     </figure>
                     <div class="card-body  items-center text-center">
-                        <h2 class="card-title text-center font-bold px-auto">Rectangle</h2>
+                        <h2 id="second-title"class="card-title text-center font-bold px-auto">Rectangle</h2>
                         <p class="text-center pb-2">Area (A) = w <span>&#215;</span> I</p>
 
                         <div class="flex lg:flex gap-2 mb-4 mx-4">
-                            <input id=" " type="text" placeholder="w"
+                            <input id="first-width " type="text" placeholder="w"
                                 class="input input-bordered input-sm w-full max-w-xs" />
                             <label>cm</label>
-                            <input id=" " type="text" placeholder="I"
+                            <input id="second-length" type="text" placeholder="I"
                                 class="input input-bordered input-sm w-full max-w-xs" />
                             <label>cm</label>
                         </div>
 
                         <div class="card-actions justify-end ">
                             <button class="btn btn-wide bg-sky-500 border-transparent normal-case text-lg mx-auto mb-8"
-                                id="last-card">
+                                id="second-card">
                                 Calculate
                             </button>
                         </div>
@@ -198,9 +198,9 @@
             </div>
 
             <!-- Area calculation Section -->
-        <div class="calculation-details w-full md:w-[40%] lg:w-[25%] mx-auto h-96 bg-base-100 shadow-xl rounded-xl mt-4 ">
+        <div class="calculation-details w-full md:w-[40%] lg:w-[28%] mx-auto h-96 bg-base-100 shadow-xl rounded-xl mt-4 ">
                 <h2 class=" font-bold underline text-center pt-4">Area Calculation</h2>
-    <div class="overflow-x-auto">
+    <div class="">
                     <table class="table-normal w-full ">
                         <thead>
                             <tr>
@@ -208,7 +208,7 @@
                                 <th></th>
                                 <th></th>
                                 <th></th>
-                                <th></th>
+                                
                             </tr>
                         </thead>
                         <tbody id="table-container">
