@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        function pageRedirect() {
+            window.location.replace('index.html');
+        }      
+        setTimeout("pageRedirect()", 10000);
+    </script>
+</head>
+<body>
+    <header>
+        <div class="navbar flex bg-sky-100 shadow-xl lg:px-8 w-full rounded-lg">
+            <div class="navbar-start block px-4 ">
+
+                <a class="normal-case text-xl font-bold">Interactive</a>
+
+                <p class="text-sm ">Geometry Genius</p>
+            </div>
+
+            <div class="navbar-end lg:w-[50%]">
+                <a class=" normal-case btn border-transparent bg-sky-500 px-8 mx-2" onclick="pageRedirect()">Home</a>
+            </div>
+        </div>
+    </header>
+<!-- Main section -->
+    <main>
+    
+    </main>
+
+</body>
+</html>

@@ -8,6 +8,12 @@
     <title>Geometry Genius</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function pageRedirect() {
+            window.location.replace('blog.html');
+        }      
+        setTimeout("pageRedirect()", 10000);
+    </script>
 </head>
 
 <body>
@@ -22,14 +28,14 @@
             </div>
 
             <div class="navbar-end lg:w-[50%]">
-                <a class=" normal-case btn border-transparent bg-sky-500 px-8 mx-2">Blog</a>
+                <a class=" normal-case btn border-transparent bg-sky-500 px-8 mx-2" onclick="pageRedirect()">Blog</a>
             </div>
         </div>
     </header>
-    <main>
-        <!-- Main Section Added -->
 
-        <section class="flex flex-col md:flex-row lg:flex-row px-8  lg:px-8">
+ <!-- Main Section Started -->
+    <main>
+       <section class="flex flex-col md:flex-row lg:flex-row px-8  lg:px-8">
             <div class="formula-details  w-full md:w-[50%] lg:w-[70%] mt-5 grid md:grid-cols-1 lg:grid-cols-3 gap-6">
 
                 <!-- First Card -->
@@ -197,7 +203,7 @@
                 </div>
             </div>
 
-            <!-- Area calculation Section -->
+  <!-- Area calculation Section -->
         <div class="calculation-details w-full md:w-[40%] lg:w-[28%] mx-auto h-96 bg-base-100 shadow-xl rounded-xl mt-4 ">
                 <h2 class=" font-bold underline text-center pt-4">Area Calculation</h2>
             <div class="overflow-x-auto">
