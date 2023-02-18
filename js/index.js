@@ -31,6 +31,36 @@ document.getElementById('first-card').addEventListener('click',function(){  seri
 });
 
 //Second Card
+document.getElementById('second-card').addEventListener('click',function(){  serial += 1;
+    const cardTitle=document.getElementById('second-title').innerText;
+    const firstInput=document.getElementById('first-width').value;
+    const secondInput=document.getElementById('second-length').value;
+  //  console.log(cardTitle,typeof firstInput,typeof secondInput);
+
+    const rectangleArea=parseFloat(firstInput)*parseFloat(secondInput);
+    const buttonConvert=document.getElementById('btn-convert');
+     console.log(buttonConvert);
+    
+    //validation
+    if (
+        firstInput < 0 ||
+        firstInput == "" ||
+        secondInput < 0 ||
+        secondInput == ""
+        ) {
+        alert("Please Enter Valid Inputs");
+        return serial=0;
+      }
+      else{
+        displayData(cardTitle,rectangleArea);
+      }
+    
+    
+});
+
+//Third Card
+
+
 
 // Common Function
 //common function to display  data
